@@ -1,39 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 	<meta charset="UTF-8">
+
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
 	<title>Portfolio: David Collins Moore</title>
 </head>
+
 <body>
 
-<header>
-	<span>David Moore</span>
-	<nav>
-		<ul>
-			<li>Home</li>
-			<li>About</li>
-			<li>Portfolio</li>
-			<li>Connect</li>
-		</ul>
-	</nav>
-</header>
+<div class="container-fluid">
+	<header>
+		<span>David Moore</span>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Portfolio</a></li>
+				<li><a href="#">Connect</a></li>
+			</ul>
+		</nav>
+	</header>
 
 
-<div class="main">
-	<h1>Unicornicopia</h1>
-	<h2>Top Tier Design + Full Stack Development</h2>
-	<h3>by David Collins Moore</h3>
-	<hr>
-	<input type="button" value="github">
-	<input type="button" value="freecodecamp">
-	<input type="button" value="linkedin">
-	<input type="button" value="resume">
+	<div class="main" id="home">
+		<h1>Unicornicopia</h1>
+		<h2>Top Tier Visual Design + Full Stack Development</h2>
+		<h3>by David Collins Moore</h3>
+		<hr>
+
+		<input type="button" value="github" onclick="window.open('https://github.com/3chordme');">
+		<input type="button" value="freecodecamp" onclick="window.open('http://www.freecodecamp.com/3chordme');">
+		<input type="button" value="linkedin" onclick="window.open('https://www.linkedin.com/in/davidcollinsmoore');">
+		<input type="button" value="resume needs to be added" onclick="window.open('https://github.com/3chordme');">
+
+	</div>
+
+	<div class="main" id="about">
+		<h4>David Collins Moore</h4>
+		<p>Monocle ipsum dolor sit amet iconic Ginza hand-crafted charming international first-class Porter cutting-edge impeccable exclusive. Airport bureaux first-class ryokan. Quality of life global Gaggenau Muji St Moritz Nordic Washlet Singapore, iconic wardrobe. Concierge carefully curated Winkreative conversation, bespoke Baggu ryokan izakaya. Beams emerging finest Zürich bulletin classic. Lufthansa Singapore boutique, K-pop delightful Helsinki Boeing 787 exclusive hub sleepy charming espresso Swiss cutting-edge.</p>
+	</div>
+
+	<div class="main" id="portfolio">
+		<h4>Coding Portfolio</h4>
+		<p>For my code-free design portfolio, visit <a href="https://behance.net/palebluepixel">behance.net/palebluepixel</a>.
+			<a href="#"><div class="project">Project One</div>
+			<a href="#"><div class="project">Project Two</div></a>
+			<a href="#"><div class="project">Project Three</div></a>
+			<a href="#"><div class="project">Project Four</div></a>
+			<a href="#"><div class="project">Project Five</div></a>
+			<a href="#"><div class="project">Project Six</div></a>
+	</div>
+
+	<div class="main" id="connect">
+		<h4>Connect with David</h4>
+		<p>davidcollinsmoore@gmail.com</p>
+
+		<input type="button" value="github" onclick="window.open('https://github.com/3chordme');">
+		<input type="button" value="freecodecamp" onclick="window.open('http://www.freecodecamp.com/3chordme');">
+		<input type="button" value="linkedin" onclick="window.open('https://www.linkedin.com/in/davidcollinsmoore');">
+		<input type="button" value="resume needs to be added" onclick="window.open('https://github.com/3chordme');">
+
+	</div>
+
+	<footer>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Portfolio</a></li>
+				<li><a href="#">Connect</a></li>
+			</ul>
+		</nav>
+	</footer>
+
 </div>
-
-<div class="main">
-	<h4>David Collins Moore</h4>
-	<p>Monocle ipsum dolor sit amet iconic Ginza hand-crafted charming international first-class Porter cutting-edge impeccable exclusive. Airport bureaux first-class ryokan. Quality of life global Gaggenau Muji St Moritz Nordic Washlet Singapore, iconic wardrobe. Concierge carefully curated Winkreative conversation, bespoke Baggu ryokan izakaya. Beams emerging finest Zürich bulletin classic. Lufthansa Singapore boutique, K-pop delightful Helsinki Boeing 787 exclusive hub sleepy charming espresso Swiss cutting-edge.</p>
 
 </body>
 </html>

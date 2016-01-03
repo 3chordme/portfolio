@@ -1,0 +1,9 @@
+header {
+  display: block;
+  background: lightGray;
+  height: 100px;
+}
+
+nav ul li {
+  display: inline-block;
+}
