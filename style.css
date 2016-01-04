@@ -1,9 +1,112 @@
-header {
-  display: block;
-  background: lightGray;
-  height: 100px;
+* {
+  box-sizing: border-box;
 }
 
-nav ul li {
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: helvetica;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+}
+
+.container-fluid {
+  width: 70%;
   display: inline-block;
+}
+
+.devtools {
+  width: 30%;
+  float:left;
+  position: fixed;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+header {
+  height: 70px;
+  position: fixed;
+  width: 100%;
+  display: none;
+}
+
+header span {
+  font-size: 5px;
+  text-transform: uppercase;
+}
+
+header, footer {
+  display: block;
+  background: #fff4d4;
+  padding: 20px;
+}
+
+nav, nav ul li {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+section {
+  height: 700px;
+  padding: 10px 20px;
+}
+
+/*.top {
+  height: 25px;
+  width: 25px;
+  border-radius: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;*/
+    /*position: relative;*/ /*problem because not fully visible after scrolling to a="name"*/
+    /*top: -12px;*/
+  /*padding-top: 5px;
+  display: inline-block;
+  float: left;
+}*/
+
+h1 {
+  font-size: 4em;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-weight: 100;
+}
+
+#home       {
+  background: #fefefe;
+  text-align: center;
+}
+
+#about      { background: #efefef; }
+
+#portfolio  { background: #fefefe; }
+
+#connect    { background: #efefef; }
+
+.project {
+  height: 180px;
+  width: 30%;
+  display: inline-block;
+  border: 1px solid red;
+  text-align: center;
+}
+
+h6 {
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  height: 120px;
 }

@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 	<meta charset="UTF-8">
-
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
 	<title>Portfolio: David Collins Moore</title>
 </head>
 
 <body>
 
-<div class="container-fluid">
-	<header>
-		<span>David Moore</span>
+<div class="container-fluid" id="main-container">
+
+	<!--HEADER: includes Name (link to anything?), plus Home, About, Porfolio, and Connect links that scroll down-->
+
+	<header><a name="top"></a>
+		<span>I am David Collins Moore, the small and mighty!</span>
 		<nav>
 			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Portfolio</a></li>
-				<li><a href="#">Connect</a></li>
+				<li><a href="#home">Home</a> | </li>
+				<li><a href="#about">About</a> | </li>
+				<li><a href="#portfolio">Portfolio</a> | </li>
+				<li><a href="#connect">Connect</a></li>
 			</ul>
 		</nav>
 	</header>
 
 
-	<div class="main" id="home">
+	<section id="home">
+
+		<!-- <a href="#top"><div class="top">^</div></a> -->
+
+		<h6>#home</h6><a name="home"></a>
 		<h1>Unicornicopia</h1>
 		<h2>Top Tier Visual Design + Full Stack Development</h2>
-		<h3>by David Collins Moore</h3>
+		<h6>lovingly hand-crafted by David Collins Moore</h6>
 		<hr>
 
 		<input type="button" value="github" onclick="window.open('https://github.com/3chordme');">
@@ -38,25 +41,28 @@
 		<input type="button" value="linkedin" onclick="window.open('https://www.linkedin.com/in/davidcollinsmoore');">
 		<input type="button" value="resume needs to be added" onclick="window.open('https://github.com/3chordme');">
 
-	</div>
+	</section>
 
-	<div class="main" id="about">
+	<section id="about">
+		<h6>#about</h6><a name="about"></a>
 		<h4>David Collins Moore</h4>
 		<p>Monocle ipsum dolor sit amet iconic Ginza hand-crafted charming international first-class Porter cutting-edge impeccable exclusive. Airport bureaux first-class ryokan. Quality of life global Gaggenau Muji St Moritz Nordic Washlet Singapore, iconic wardrobe. Concierge carefully curated Winkreative conversation, bespoke Baggu ryokan izakaya. Beams emerging finest Zürich bulletin classic. Lufthansa Singapore boutique, K-pop delightful Helsinki Boeing 787 exclusive hub sleepy charming espresso Swiss cutting-edge.</p>
-	</div>
+	</section>
 
-	<div class="main" id="portfolio">
+	<section id="portfolio">
+		<h6>#portfolio</h6><a name="portfolio"></a>
 		<h4>Coding Portfolio</h4>
-		<p>For my code-free design portfolio, visit <a href="https://behance.net/palebluepixel">behance.net/palebluepixel</a>.
-			<a href="#"><div class="project">Project One</div>
+		<p>For my code-free design portfolio, visit <a href="https://behance.net/palebluepixel">behance.net/palebluepixel</a>.</p>
+			<a href="#"><div class="project">Project One</div></a>
 			<a href="#"><div class="project">Project Two</div></a>
 			<a href="#"><div class="project">Project Three</div></a>
 			<a href="#"><div class="project">Project Four</div></a>
 			<a href="#"><div class="project">Project Five</div></a>
 			<a href="#"><div class="project">Project Six</div></a>
-	</div>
+	</section>
 
-	<div class="main" id="connect">
+	<section id="connect">
+		<h6>#connect</h6><a name="connect"></a>
 		<h4>Connect with David</h4>
 		<p>davidcollinsmoore@gmail.com</p>
 
@@ -65,20 +71,23 @@
 		<input type="button" value="linkedin" onclick="window.open('https://www.linkedin.com/in/davidcollinsmoore');">
 		<input type="button" value="resume needs to be added" onclick="window.open('https://github.com/3chordme');">
 
-	</div>
+	</section>
 
 	<footer>
 		<nav>
 			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Portfolio</a></li>
+				<li><a href="#">Home</a> | </li>
+				<li><a href="#">About</a> | </li>
+				<li><a href="#">Portfolio</a> | </li>
 				<li><a href="#">Connect</a></li>
 			</ul>
+			<h6>copyright &copy; 2016 davidcollinsmoore.com all rights reserved</h6>
 		</nav>
 	</footer>
 
 </div>
+
+<img class="devtools" src="images/devtools.png" alt="devtools are your friends. you love devtools. devtools love you too." />
 
 </body>
 </html>
