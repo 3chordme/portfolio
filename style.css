@@ -10,7 +10,7 @@ html, body {
 }
 
 a {
-  color: red;
+  color: white;
   text-decoration: none;
 }
 
@@ -43,7 +43,7 @@ header span {
 
 header, footer {
   display: block;
-  background: #fff4d4;
+  background: red;
   padding: 20px;
 }
 
@@ -54,9 +54,13 @@ nav, nav ul li {
   font-size: 12px;
 }
 
+.spacer {
+  height: 70px;
+  text-align: center;
+}
+
 section {
   height: 700px;
-  padding: 10px 20px;
 }
 
 /*.top {
@@ -89,6 +93,10 @@ h2 {
 
 #about      { background: #efefef; }
 
+.profile {
+  width: 50%;
+}
+
 #portfolio  { background: #fefefe; }
 
 #connect    { background: #efefef; }
@@ -98,6 +106,7 @@ h2 {
   width: 30%;
   display: inline-block;
   border: 1px solid red;
+  margin: 5px;
   text-align: center;
 }
 
