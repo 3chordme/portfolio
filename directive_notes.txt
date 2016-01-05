@@ -1,0 +1,76 @@
+ng-repeat, ng-click are directives
+
+angular's solution to DOM manipulation
+
+custom directives - most powerful part of angular
+
+heavy on dom manipulation and reusability
+
+web component architecture
+
+web components are the smallest possible part of the page that are reusable.
+
+For example a nav bar could be a directive, then you don't have to copy and paste html to each page every time you change it.
+
+Almost the exact same as a factory, but you're returning an object instead of a ____
+
+directives should always be attributes or elements, e.g.
+<test-dir></test-dir>
+<div test-dir></div>
+
+using directives as classes is deprecated
+
+directives object has template or templateUrl, restrict(optional), scope(optional)
+restrict: 'E' means they can only be used as full elements
+
+inherits nearest parent controller's scope. so if it is in a different view, it gets that view's controller's scope. can be a bad thing.
+you want control over that scope, you want to isolate it, so it doesn't have access to the wrong one
+isolate scope is the solution
+
+in testDir.js put:
+
+return {
+	templateUrl: "dirName.html",
+	restrict: 'E',
+	scope: {
+		//directive only has access to what is put on the scope here, known as the isolate scope
+		name: "=myName"
+	}
+
+in controller put: $scope.name = "David";
+
+in index.html put: <test-dir my-name="name"></test-dir>
+
+in html template: put {{ name }}
+
+instead of putting "=myName" you can just put "=" to and then name="name" in your index.html
+you can also put "@" to set up string binding. <test-dir name="David"></test-dir>
+you can also put "&" to pass a function from your controller to your directive <test-dir alertName="whatsMyName"> if whatsMyName is a function you put on the scope of
+
+= two way data binding
+@ string binding
+& function binding
+
+functions of directives need to take 
+
+nested directives can get tricky. html element can only have one scope at a time.
+
+link: function(scope, elem, attrs) {
+	//these can be manipulated using jQlite
+	//link is a function that runs as soon as the directive loads(?)
+
+	//scope is the scope object from the parent controller or the scope property
+	//elem is the html element (<test-dir name="name"></test-dir>)
+	//attrs is an object that contains all the attributes of the html element (name="name")
+	elem.css({'color': 'blue'});
+	elem.text(scope.firstName);
+
+controller: function($scope) {
+	//$scope is the same as the scope in the link function, which is the same as the scope from the "scope" key
+	$scope.alertName = function() {
+		alert($scope.firstName);
+	//this whole thing works exactly like any other controller, you can inject services
+	//an html element can only have one controller, but it augments the scope object, adding properties to the parent controllers scope
+}
+}
+
