@@ -104,6 +104,10 @@ h1 {
   text-transform: uppercase;
 }
 
+#home h1 {
+  box-shadow: 0 0 5px pink;
+}
+
 h2 {
   font-weight: 100;
 }
@@ -112,7 +116,7 @@ input {
   color: red;
   background-color: white;
   display: inline-block;
-  height: 175px;
+  height: 100px;
   text-decoration: none;
   padding: 25px;
   border: 1px solid red;
@@ -122,6 +126,12 @@ input {
 
 input:hover {
   background-color: pink;
+}
+
+.github {
+  background-image: url("images/github.png");
+  background-position: 50% 10px, center;
+  background-repeat: no-repeat;
 }
 
 #home {
@@ -153,8 +163,6 @@ p {
   text-align: center;
 }
 
-#connect    { background: #efefef; }
-
 .project {
   height: 180px;
   width: 30%;
@@ -163,6 +171,8 @@ p {
   margin: 5px;
   text-align: center;
 }
+
+#connect    { background: #efefef; }
 
 h6 {
   text-transform: uppercase;
